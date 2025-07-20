@@ -124,15 +124,15 @@ You will get output like:
 ## 📊 Architecture Flowchart (Mermaid)
 
 ```mermaid
-flowchart LR
-  A[Video Files] --> B[Whisper Transcription]
-  B --> C[Build DataFrame]
-  C --> D[SentenceTransformer Embedding (GPU)]
-  D --> E[FAISS CPU Index]
-  G[User Query] --> H[Encode Query (GPU)]
-  H --> I[FAISS Search (CPU)]
-  I --> J[Retrieve Matching Segments]
-  J --> K[Display Result: Video + Timestamp + Text]
+flowchart TD
+    A["Video Files (.mp4)"] --> B["Whisper Transcription"]
+    B --> C["Build Segment DataFrame"]
+    C --> D["SentenceTransformer Embedding"]
+    D --> E["FAISS Vector Index"]
+    G["User Query"] --> H["Encode Query"]
+    H --> I["FAISS Search"]
+    I --> J["Retrieve Top Segments"]
+    J --> K["Display Video + Timestamp + Text"]
 ```
 
 ---
