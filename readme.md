@@ -74,8 +74,8 @@ choco install ffmpeg
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/Raykarr/AI-Powered-Video-Search-Engine]
-cd AI-Powered-Video-Search-Engine
+git clone https://github.com/Raykarr/AI-Powered-Video-Search-Engine
+cd [AI-Powered-Video-Search-Engine]
 ```
 
 ### 2. Install Python Dependencies
@@ -147,6 +147,36 @@ flowchart TD
 
 ---
 
+## 📄 Requirements File
+
+Create a file called `requirements.txt` and paste the following:
+
+```txt
+# Core Libraries
+numpy
+pandas
+tqdm
+
+# Whisper (for transcription)
+git+https://github.com/openai/whisper.git
+
+# Sentence Transformers
+sentence-transformers
+
+# FAISS (CPU version, compatible with Windows)
+faiss-cpu
+
+# Torch (Install based on your CUDA version, see README for alternatives)
+torch
+torchaudio
+torchvision
+
+# For audio processing (used by whisper)
+ffmpeg-python
+```
+
+---
+
 ## 🌟 Credits
 
 - Whisper by OpenAI
@@ -159,4 +189,7 @@ flowchart TD
 ## 🌐 License
 
 MIT License. Use and modify freely. Credit appreciated.
+
+---
+
 
