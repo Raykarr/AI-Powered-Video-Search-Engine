@@ -75,7 +75,7 @@ choco install ffmpeg
 
 ```bash
 git clone https://github.com/Raykarr/AI-Powered-Video-Search-Engine
-cd [AI-Powered-Video-Search-Engine]
+cd AI-Powered-Video-Search-Engine
 ```
 
 ### 2. Install Python Dependencies
